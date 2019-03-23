@@ -1,4 +1,4 @@
-// Truthy,Falsy values and equality operator
+// Truthy,Falsy values and equality operator, CHALLENGE 2
 
 /******************************************
 Truthy, Falsy values.

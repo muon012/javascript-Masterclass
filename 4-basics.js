@@ -1,4 +1,4 @@
-// Function Expressions, function declarations
+// Function Expressions, function declarations, expressions vs statements
 
 /******************************************
 Function Declaration
