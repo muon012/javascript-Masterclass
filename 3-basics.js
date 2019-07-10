@@ -6,7 +6,7 @@ Truthy, Falsy values.
 // Falsy values: undefined, null, 0, "", '', NaN. They return "false" when evaluated in a conditional statement.
 // Truthy values: all the values that are not falsy.
 
-// Because "height" isnt't define we would get the first console.log.
+// Because "height" isn't defined we would get the second console.log.
 // But be careful since even a value of 0 is treated as "falsy" even though 0 is an actual value.
 var height;
 if(height){
@@ -19,10 +19,10 @@ else{
 // When testing for defined values, even if they're zeroes, we can do this "or" check:
 var weight = 0;
 if(weight || weight === 0){
-    console.log("The variable is defined.");  
+    console.log("The variable weight is defined.");  
 }
 else{
-    console.log("Variable has not been defined.");
+    console.log("Variable weight has not been defined.");
 }
 
 /******************************************

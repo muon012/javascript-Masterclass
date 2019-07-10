@@ -12,14 +12,14 @@
 *************************************************/
 // Once the source code is transformed into machine code, the code is run.
 // The code is run in an environment called "execution context" , which is like a box that stores variables and where a 
-// piece of the code is evaluated and executed. Exection contexts are associated with an object!!!!!!
+// piece of the code is evaluated and executed. Execution contexts are associated with an object!!!!!!
 // By default, JS code is run in the "Global exection context" which is all the code that is not stored in a function.
 // All this code is part of the "global object", which in a browser is the "window" object.
 // if you check: 'lastName === window.lastName' it will return "true".
 
 // So when the code is run, the first exection context is the global execution context, if there are functions in the 
-// code then those functions get their own execution context, in other words, the machine leaves the global context for a
-// while until it evaluates that function's execution code. The variables in these execution contexts are evaluated
+// code then those functions get their own execution context, in other words, the machine leaves the global context for
+//  a while until it evaluates that function's execution code. The variables in these execution contexts are evaluated
 // and executed. If this function has a function in it that must be executed,then we leave the current function's context
 // and enter the nested function's execution context. This process is known as execution stack. All the execution contexts
 // keep getting piled up on the execution stack. Once all the functions are executed, we keep removing each nested 
@@ -38,18 +38,18 @@
 // Execution phase - code in the function is run, line by line.
 
 // In the VARIABLE OBJECT, the arguments object is created containing all the arguments passed into the function, remember 
-// we talking about the execution context. The code is scanned for function declarations, and a property is 
+// we are talking about the execution context. The code is scanned for function declarations, and a property is 
 // also created (in the variable object) pointing to that function. Variable declarations are also scanned, but their 
 // values are set to "undefined". This is called HOISTING. Functions (when written as function declarations) and variables
-// are available before the exection phase starts. However, variables are only defined (they go from "undefined" to their 
+// are available before the execution phase starts. However, variables are only defined (they go from "undefined" to their 
 // actual value written in the code)only in the execution phase. This is why you can put function declarations at the end 
-// of your program, call them at the start, and still the program will run but can't do it with function expressions.
+// of your program, call them at the start, and still the program will run but can't do this with function expressions.
 
 /************************************************
  Hoisting
 *************************************************/
-// Thanks to hoisting, you can call functions that use function declarations but you can't call them before if you use 
-// function expressions.
+// Thanks to hoisting, you can call functions that were written as function declarations at the start of your code, but 
+// you can't call functions that were written as function expressions at the start.
 
 // Using function declarations
 calcAge(1990);
@@ -62,7 +62,7 @@ calcAge(1990);
 // Using function expressions.
 // We need to call the function AFTER it is defined.
 
-// retirement(1990); // This returns an error
+// retirement(1990); // This returns an error because the function was not written as a function declaration
 var retirement = function(birthYear){
     console.log(65 - (2019 - birthYear));
 }
@@ -113,9 +113,9 @@ function first(){
 
 // DON'T confuse execution stack (order in which functions are called) with scope chain (order in which functions are
 // written lexically (nested or unested).
-// What the determines the scope of variables is where the variables are written.
-// In this example, "foo3" function cannot access the variables "y" and "z" because it is not a nested function of "foo2".
-// Running console.log() in the foo3() function leads to an error
+// What determines the scope of variables is where the variables are written.
+// In this example below, the "foo3" function cannot access the variables "y" and "z" because it's not a nested function of "foo2".
+// Running the console.log() statement in the foo3() function leads to an error.
 var x = "Hello!";
 foo1();
 

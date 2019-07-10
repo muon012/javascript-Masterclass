@@ -77,6 +77,7 @@ switch(job){
 // Using swtich statements for logical operators:
 // We check if the conditional is true or not.
 
+
 var ageRange = "";
 switch(true){
     case age < 13 : ageRange = "boy";
@@ -84,6 +85,7 @@ switch(true){
     case age >= 13 && age < 20: ageRange = "teenager";
     break;
     case age >= 20 && age < 30 : ageRange = "young man";
+    break;
     default: ageRange = "man";
 }
 

@@ -34,7 +34,7 @@ Variable mutation and type coercion
 // Variable mutation: We can easily change the value of a variable by assigning a new value to it.
 
 var name = "Eddie"
-var age = 10 // Example of variable mutation.
+var age = 10 // This is an example of variable mutation since we declared a value for 'age' earlier.
 console.log(name + " is " + age + " and " + job); // Example of type coercion.
 
 alert(name + " is " + age + " and " + job); // alert pops up a pop-up window in the browser.
@@ -42,7 +42,7 @@ alert(name + " is " + age + " and " + job); // alert pops up a pop-up window in 
 // Prompt the user to input a number:
 var userNumber = prompt("Please enter a number: ")
 console.log("The number you entered was: " + userNumber);
-console.log("The type of the input entered is: " + typeof userName);
+console.log("The type of the input entered is: " + typeof userNumber);
 
 
 var year, myAge, anotherAge;
@@ -81,7 +81,7 @@ console.log(averageAge);
 /****************************
 Multiple assignment.
 ***************************/
-// We can give assign values to multiple variables like this:
+// We can assign values to multiple variables like this:
 var alpha, gamma;
 alpha = gamma = (3 + 5) * 4 - 6;
 console.log(alpha, gamma);

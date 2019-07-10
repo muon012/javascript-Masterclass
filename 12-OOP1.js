@@ -3,7 +3,8 @@
 /****************************
  Primitives 
  ***************************/
-// Primitives are types: string, number, boolean, undefined, null. Objects are everything else.
+// Primitives are data types: string, number, boolean, undefined, null. Objects are everything else that isn't a
+// primitive.
 
 /****************************
  Object 
@@ -25,6 +26,7 @@
  ***************************/
 // It is the property that allows inheritance among constructors. ALL JS objects have this property.
 // In this property we put all the methods and properties we want the instances to inherit.
+
 /****************************
  Prototype Chain 
  ***************************/

@@ -36,8 +36,9 @@ jane["lastName"] = "Smith";
 jane.birthYear = 1991;
 
 console.log(jane);
-console.log(john.calAge(2019));
-console.log(john);
+console.log("\n")
+console.log(john.calAge(2019)); // This is returning 'undefined' because this method is a -function declaration- and they don't return anything.
+console.log(john); // Thanks to the line before, the 'age' property has been created.
 
 /*******************************************
  Challenge 4

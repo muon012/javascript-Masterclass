@@ -20,8 +20,12 @@ init();
  Callback Function
 *************************************************/
 // It is a function that's supplied as an argument to another function(parent function), such that when the parent 
-// function is called (whatever condition, in this case the event "click") and its function body completes, the callback
-// function is then invoked.
+// function is called (whatever condition, in this case below the event "click") and its function body completes, 
+// the callback function is then invoked.
+// In simple terms, a function that is an argument of another function.
+// It gets its name 'callback' because you don't use '()' when you write in in the arguments' field of the parent 
+// function, you put the '()' when you 'callback' such function inside the parent function's body. This applies to
+// 'named functions' only because with anonymous functions you need to write '()' in the arguments' field.
 
 /************************************************
  Anonymous Function
